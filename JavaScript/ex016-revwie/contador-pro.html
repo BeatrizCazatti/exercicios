@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="math.ico" type="image/x-icon">
+    <title>Analisador de Números</title>
+    <link rel="shortcut icon" href="analytics.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <h1>Contador Online</h1>
+    <section>
+        <div>
+            <p>Digite um número:</p><input type="number" name="number" id="number" placeholder="De 1 a 100">
+            <input type="button" value="Adicionar" id="button" onclick="adicionar()">
+        </div>
+        <div><select name="numeros" id="numeros" size="10"></div></select>
+        <div><input type="button" value="Analisar" id='button' onclick="analisar()"></div>
+        <div>
+            <ul>
+                <li class='dados'></li>
+                <li class='dados'></li>
+                <li class='dados'></li>
+                <li class='dados'></li>
+                <li class='dados'></li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; BeatrizCazattiFigueiredo</p>
+    </footer>
+</body>
+</html>
