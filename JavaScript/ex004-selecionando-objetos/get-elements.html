@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Objetos</title>
+</head>
+<body>
+    <h1>Aqui temos um título</h1>
+    <p id="especial" >E aqui o primeiro parágrafo</p>
+    <p>Temos também o segundo</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'white'
+        
+        //OU:
+        
+        var especial = window.document.getElementById('especial')
+        especial.style.color = 'white'
+
+        //OU:
+
+        //<p class="paragrafo">E aqui fica o primeiro parágrafo</p>
+        var especial = window.document.getElementsByClassName('paragrafo')
+        especial.style.color = "white"
+
+        //OU:
+        //<p id="branco">E aqui fica o primeiro parágrafo</p>
+
+        var especial = window.document. querySelector('p#branco')
+        especial.style.color = "white"
+
+        
+
+    </script>
+</body>
+</html>

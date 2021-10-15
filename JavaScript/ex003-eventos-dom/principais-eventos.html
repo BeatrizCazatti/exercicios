@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #botao{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 139, 56);
+            color: rgb(167, 80, 19);
+            text-align: center;
+            line-height: 200px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="botao" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja
+    </div>
+    <script>
+        var bt = window.document.getElementById('botao')
+
+        function clicar(){
+            bt.innerText = 'Clicou...'
+        }
+        function entrar(){
+            bt.innerText = 'Entrou...'
+        }
+        function sair(){
+            bt.innerText = 'Saiu...'
+        }
+    </script>
+</body>
+</html>

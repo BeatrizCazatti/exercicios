@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="math.ico" type="image/x-icon">
+    <title>Tabuadas</title>
+    <style>
+        body{
+            background-color: rgba(247, 89, 96, 0.966);
+            color: rgb(198, 52, 52);
+            text-shadow: brown -1px 0.5px;
+            text-align: center;
+            font-size: 20px;
+            
+        }
+
+        section{
+            background-color: #fff;
+            box-shadow: 5px 5px 2px rgba(66, 1, 1, 0.17);
+            border-radius: 15px;
+            padding: 15px;
+            min-height: 400px;
+            max-width: 500px;
+            margin:auto;
+        }
+        
+        input {
+            font-size: 18px;
+            padding: 3px;    
+        }
+        
+        #fator{
+            background-color: rgba(247, 89, 96, 0.966);
+            border: 2px solid brown;
+            border-radius: 3px;
+            color: brown
+        }
+    
+        #button {
+            background-color: rgba(247, 89, 96, 0.966);
+            border: 2px solid brown;
+            border-radius: 3px;
+            color: brown
+        }
+    
+        #button:hover {
+            background-color: rgba(201, 62, 69, 0.966);
+            transition-duration: .3s;
+            cursor: pointer;
+        }
+        
+        select {
+            font-size: 18px; 
+            padding: 3px;
+            margin: inherit;   
+            margin-top: 30px;
+        }
+        
+        #seltab{
+            position: unset; 
+            display: none;  
+            overflow: hidden;
+            background-color: rgba(247, 89, 96, 0.966);
+            border: 2px solid brown;
+            border-radius: 3px;
+            color: brown;
+        }
+
+        img {
+            position: relative;
+            margin-top: 40px;
+            width: 230px;
+        }
+
+
+        @media (max-width: 600px){
+            body{
+                background-color: #fff;
+            }
+            section{
+                box-shadow: 1px 1px #fff;
+            }
+        }
+
+    </style>
+</head>
+<body>    
+    <h1>Tabuadas Online</h1>
+    <section>
+        <p>Digite o número da tabuada:</p>
+        <input type="number" name="fator" id="fator" onclick="limpar()">
+        <input type="button" value="Gerar Tabuada" onclick="calcular()" id="button" >
+        <div>
+            <select id="seltab" name="seltab" id="seltab" size="11">  
+            </div>
+        </select>  
+        <img id='image' src="math.gif"></img>
+            
+    </section>
+    <script>
+        var fator = document.getElementById('fator')
+        var seltab = document.getElementById('seltab')
+        var tab = document.getElementById('tab')
+        var gif = document.getElementById('image')
+        
+        function calcular(){
+
+            if(fator.value.length == 0){
+                window.alert('Digite um número...')
+            } else {
+                var f = Number(fator.value)
+                //para limpar o select
+                seltab.innerHTML = ''
+                gif.style.display = "none"
+                seltab.style.display = "inline-block"
+                
+                for(n = 0; n <= 10; n++){
+
+                    var item = document.createElement('option')
+                    item.text = `${f} x ${n} = ${f*n}`
+                    seltab.appendChild(item)
+                }
+
+            }
+        }
+
+        function limpar(){
+            gif.style.display = "inline-block"
+            seltab.style.display = "none"
+        }
+        </script>
+    <footer>
+        <p>&copy; BeatrizCazattiFigueiredo</p>
+    </footer>
+</body>
+</html>

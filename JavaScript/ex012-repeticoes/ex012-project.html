@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(251, 251, 115, 0.966);
+            color: #000;
+            text-align: center;
+        }
+        section{
+            background-color: #fff;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .sex {
+            display: inline-flex;
+            justify-content: center;
+        }
+        .sex p{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    
+    <section>
+        <div class="contfirst">
+                <p>Ano de Nascimento: <input type="number" name="nascimento" placeholder="Ano" id="txtano"></p>
+            </div>
+            <div class="sex">
+                <p>Sexo:</p>
+                <p><input type="radio" name="sexo">Masculino</p>
+                <p><input type="radio" name="sexo">Feminino</p>
+            </div>
+            <div>
+                <input type="button" value="Verificar" onclick="verifica()">
+            </div>
+            <div class="contsecond">
+                <p></p>
+            </div>
+    </section>
+    <script>
+        var data = new Date()
+        var ano = data.getFullYear()
+        var idade = ano - Number(fano.value)
+        var fano = window.document.getElementById('txtano');
+
+        var genero = window.document.getElementsByName('sexo')
+
+        function verifica(){
+            if(fano == 0 || fano > ano || fano < 1890){
+                window.alert('Verifique novamente seus dados!')
+            } else if(genero[0].checked){
+                //homem
+                window.alert('o bicho é macho sô')
+            } else if(genero[1].checked){
+                //mulher
+                window.alert('ih, a donzela é fêmea!')
+            }
+        
+            
+        }
+    </script>
+    <footer>
+        <p>&copy; BeatrizCazattiFigueiredo</p>
+    </footer>
+</body>
+</html>
