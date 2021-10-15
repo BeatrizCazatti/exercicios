@@ -1,0 +1,19 @@
+@charset
+/*O comentário no CSS é feito diferente do HTML*/
+/*Este segundo parâmetro refere-se ao "sublinhado" dos links que já vêm prefigurado*/
+a{
+    color: brown;
+    text-decoration: none;
+}
+/*Verifique se esse computador tem a fonte "helvetica", se não veja se possui a font "sans-serif" e ainda, se não tiver utilize a "arial*/
+h1{
+    font-family: helvetica, sans-serif, arial;
+}
+/*Você só possui uma id com mesmo nome na sua página*/
+#linkespecial{
+    color: cyan;
+}
+/*Você pode utilizar +de uma class com o mesmo nome em uma página*/
+.linksnormais{
+    color: darkorange;
+}
