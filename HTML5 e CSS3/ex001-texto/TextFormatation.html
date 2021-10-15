@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/text.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+    <!--Se você declarar aqui em cima você define para todos os "mark's"(mto válido para muitas marcas com mesmo estilo) se fizer indivdualmente como eu fiz com a cor roxa só será valido para aquela marcação-->
+    <style>
+        mark{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Texto em negrito/destaque:</h1>
+    <p>Aqui temos uma <strong>expressão em negrito</strong>, utilizando a tag STRONG.</p>
+
+    <h1>Texto em negrito/ênfase:</h1>
+    <p>Aqui temos uma <EM>expressão em itálico</EM>, utilizando a tag EM.</p>
+
+    <h1>Texto inserido/sublinhado:</h1>
+    <p>Aqui temos uma <ins>expressão inserida</ins>, utilizando a tag INS.</u></p>
+
+    <h1>Texto deletado/riscado:</h1>
+    <p>Aqui temos uma <del>expressão deletada</del>, utilizando a tag DEL.</p>
+
+    <h1>Texto marcado:</h1>
+    <p>Aqui temos uma <mark style="background-color: rgb(209, 44, 173);">expressão marcada</mark>, utilizando a tag MARK.</p>
+
+    <h1>Exemplo de texto sobrescrito:</h1>
+    <p>2<sup>10</sup> = 1024</p>
+
+    <h1>Exemplo de texto subscrito:</h1>
+    <p>H<sub>2</sub>O</p>
+
+    <h1>Citações Simples:</h1>
+    <p>Segundo um autor anonimo: "Computador é um burro rápido"</p>
+    <!--Além das aspas serem um pouco mais diferentes do primeiro(não semântico), este segundo(semântico) jeito dá forma e sentido a citação-->
+    <p>Segundo um autor anonimo: <q>Computador é um burro rápido</q></p>
+
+    <h1>Citações Completas:</h1>
+    <p>Segundo Felipe Franco:</p>
+
+            <!--Esse link dá mais profissionalismo no sentido de uma citação mais validada e que respeita os direitos autorais-->
+            <blockquote cite="https://www.fabricadecodigo.com/5-dicas-de-como-ser-um-bom-programador/">
+                Não ache que você vai aprender a programar somente no trabalho, bons programadores sempre procuram aprender algo novo, seja uma nova linguagem, uma nova técnica, uma nova ferramenta, ou outra coisa.
+                Procure interagir com outros desenvolvedores, seja em um curso, projeto paralelo ou eventos, pois é sempre bom ter uma visão diferente sobre o assunto programação.
+                Tenha fome e sede de conhecimento pois nosso cérebro precisa de estímulos constantes e tendemos ficar estagnados, achando que estamos dominando os assuntos que nos cercam no dia a dia.
+            </blockquote>
+    
+
+    <h1>Abreviações:</h1>
+    <p> Estou aprendendo <abbr title="HyperText Markeup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr></p>
+
+    <h1>Texto em forma de código:</h1>
+
+    <pre>
+        <code>
+        If 1>5 Then
+        Msgbox "condição verdadeira"
+        Else
+        Msgbox "condição falsa"
+        End if
+        </code>
+    </pre>
+</body>
+</html>
