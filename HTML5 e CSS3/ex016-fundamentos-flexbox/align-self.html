@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .align-items {
+            align-items: center;
+        }
+        .item {
+            background-color: rgb(201, 86, 201);
+            font-size: 24px;
+            text-align: center;
+            flex: 1;
+            margin: 5px;
+        }
+        .column {
+            flex-direction: column;
+        }
+
+        .auto {
+         
+            align-self: auto;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end{
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>row</h2>
+    <section class="flex-container align-items">
+        <div class="item auto">A</div>
+        <div class="item auto">B</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item auto">D</div>
+    </section>
+    <section class="flex-container">
+        <div class="item center">A</div>
+        <div class="item flex-start">B</div>
+        <div class="item stretch">Lorem ipsum dolor sit consectetur adipisicing elit.</div>
+        <div class="item flex-end">D</div>
+    </section>
+
+    <h2 style="margin-top: 100px;">column</h2>
+    <section class="flex-container align-items column">
+        <div class="item auto">AA</div>
+        <div class="item auto">B</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item auto">D</div>
+    </section>
+    <section class="flex-container column">
+        <div class="item center">A</div>
+        <div class="item flex-start">B</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item flex-end">D</div>
+    </section>
+
+</body>
+</html>

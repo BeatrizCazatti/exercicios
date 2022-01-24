@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Itens</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            max-width: 500px;
+            display: flex;
+        }
+        .item  {
+            background-color: palevioletred;
+            text-align: center;
+            margin: 5px;
+            min-height: 25px;
+            flex: 1;
+
+        }
+        
+        .center {
+            align-items: center;
+        }
+        .stretch {
+            align-items: stretch;
+        }
+        .flex-start {
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline {
+            align-items: baseline;
+        }
+        .column {
+            flex-direction: column;
+        }
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+        .central .item {
+            flex: 0;
+            padding: 20px;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>row</h2>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">1 <br> 2 </div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <h2 style="margin-top: 100px;">column</h2>
+    <p>center (column)</p>
+    <section class="container center column">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>stretch (column)</p>
+    <section class="container stretch column">
+        <div class="item">1 <br> 2 </div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>flex-start (column)</p>
+    <section class="container flex-start column">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>flex-end (column)</p>
+    <section class="container flex-end column">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <p>baseline (column)</p>
+    <section class="container baseline column">
+        <div class="item">1 <br> 2</div>
+        <div class="item">outro item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elis.</div>
+        <div class="item">mais esse aqui no finalzinho</div>
+    </section>
+
+    <h2 style="margin-top: 50px;">alinhamento</h2>
+    <secton class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo voluptate, magni quia saepe excepturi culpa quisquam amet laborum aperiam quod beatae.</div>
+    </secton>
+
+</body>
+</html>

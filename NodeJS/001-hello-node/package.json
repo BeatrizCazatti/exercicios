@@ -1,0 +1,13 @@
+{
+  "name": "primeira-aula",
+  "version": "1.0.0",
+  "description": "projeto para iniciar no node",
+  "main": "index.js",
+  "scripts": {
+    "principal": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["javascript", "node"],
+  "author": "Beatriz Cazatti",
+  "license": "ISC"
+}
