@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="style.css">
+<title>Treinando com Mario</title>
+<body>
+    <div onclick=""></div>
+    <!-- <button class="botao-de-like">
+        <span class="owner">DevSoutinho</span>
+        <img src="https://img.icons8.com/ios-filled/50/fa314a/like--v1.png"/>
+        <span class="contador">0 likes</span>
+    </button>
+    <button class="botao-de-like" >
+        <span class="owner">Alura</span>
+        <img src="https://img.icons8.com/ios-filled/50/fa314a/like--v1.png"/>
+        <span class="contador">0 likes</span>
+    </button>
+    <button class="botao-de-like">
+        <span class="owner">FrontInSampa</span>
+        <img src="https://img.icons8.com/ios-filled/50/fa314a/like--v1.png"/>
+        <span class="contador">0 likes</span>
+    </button> -->
+</body>
+    <script>
+        /*
+         *====[Dados]====
+         */
+        const channels = [
+            {
+                name: 'DevSoutinho',
+                likes: 0,
+            },
+            {
+                name: 'Alura',
+                likes: 0,
+            },
+            {
+                name: 'FronInSampa',                
+                likes: 0,
+            },
+        ];
+
+        //================================
+
+            function clickLikes(channelName){
+                channels.forEach((currentChannel) => {
+                    if(currentChannel.name == channelName){
+                        currentChannel.likes = currentChannel.likes +10
+                        render(channels);
+                    }
+                })
+            }
+
+        /*
+         *====[Lógica de renderização]====
+         */
+
+        const buttonTemplate = function (channel) {
+
+            return `
+                <button class="botao-de-like" onclick="clickLikes('${channel.name}')">
+                    <span>${channel.name}</span>
+                    <img src="https://img.icons8.com/ios-filled/50/fa314a/like--v1.png"/>
+                    <span class="contador">${channel.likes} likes</span>
+                </button>
+            `;
+        }
+        const $screen = document.querySelector('body');
+        const $button = document.querySelectorAll('button');
+
+        function render(channels){            
+            $screen.innerHTML = channels.map((channel) => {
+                return buttonTemplate(channel);
+            }).join(''); 
+        }
+
+
+        render(channels);
+    </script>
+</html>
