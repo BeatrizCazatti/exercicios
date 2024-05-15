@@ -1,0 +1,1 @@
+#Receba o valor de um ângulo e diga o valor do sen, cos e tag.
