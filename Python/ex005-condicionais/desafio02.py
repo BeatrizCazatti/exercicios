@@ -4,7 +4,7 @@ n1 = int(input('primeiro número:'))
 n2 = int(input('segundo número:'))
 n3 = int(input('terceiro número:'))
 
-if n1 > n2:
+if n1 > n2 :
     if n1 > n3:
         if n3 > n2:
             #n2 n3 n1
