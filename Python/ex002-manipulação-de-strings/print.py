@@ -1,4 +1,5 @@
 x = 'curso de python no cursoemvideo'
 
-print(x[:5])#curso
-print(x[8])
+print(x)
+print(x[:5]) #curso
+print(x[9:15]) #python
