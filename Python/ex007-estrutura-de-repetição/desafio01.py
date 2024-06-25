@@ -1,6 +1,8 @@
-#desafio 01:
+#desafio 01: Faça um programa que mostre na tela uma contagem regressiva para a estouro de fogos de artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
 
-for c in range(10,0,-1):
+from time import sleep
+for c in range(10,-1,-1):
     print(c)
+    sleep(1)
 
 print('POW PAH TARATATATA POWW')

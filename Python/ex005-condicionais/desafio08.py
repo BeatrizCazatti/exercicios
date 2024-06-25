@@ -11,11 +11,13 @@ print('#'*20)
 base = int(input('Escolha a opção de conversão:'))
 
 if base == 1:
-    print('O número em base binária é {}')
+    print('O número {} em base binária é {}'.format(num, bin(num)[2:]))
 elif base == 2:
-    print('O número em base octal é {}')
+    print('O número {} em base octal é {}'.format(num, oct(num)[2:]))
 elif base == 3:
-    print('O número em base hexadecimal é {}')
+    print('O número {} em base hexadecimal é {}'.format(num, hex(num)[2:]))
+else:
+    print('Opção inválida.')
 
 
 
