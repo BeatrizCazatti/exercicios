@@ -1,4 +1,4 @@
-#desafio 07:
+#desafio 07: Desenvolva um programa que leia o noma, idade a sexo de 4 pessoas. No final do programa, mostra:
 
 #A média da idade do grupo
 #Qual o nome do homem mais velho
