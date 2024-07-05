@@ -6,25 +6,35 @@ print('=-='*10)
 print('JOGAR PAR OU ÍMPAR')
 print('=-='*10)
 
-valorPC = int(randint(0,100))
-valorUser = int(input('Digite um valor:'))
-escolhaUser = str(input('Escolha [P/I]:')).upper()
-soma = int(0)
 
 while True:
+    valorPC = int(randint(0,100))
+    valorUser = int(input('Digite um valor:'))
+    escolhaUser = str(input('Escolha [P/I]:')).upper()
+    soma = int(0)
+
     print(f'O computador escolheu {valorPC}')
     soma = valorPC + valorUser
-    print(f'{valorUser} com {valorPC} dá {soma}, um número', end='')
-
+    print(f'{valorUser} com {valorPC} dá {soma}, um número ', end='')
     if soma % 2 == 0:
-        print(' PAR')
-    else:
-        print(' ÍMPAR \n', 'ACERTOU' if escolhaUser == 'I' else 'PERDEU')
-        break
-    if escolhaUser == 'P':
-        'PERDEU'
-    else:
+        print('PAR')
 
+        if escolhaUser == 'P':
+            print('ACERTOU')
+        else:
+            print('PERDEU')
+            break
+    else:
+        print('ÍMPAR')
+
+        if escolhaUser == 'I':
+            print('ACERTOU')
+        else:
+            print('PERDEU')
+            break
+    print('='*20)
+    print('Jogando novamente...')
+    print('='*20)
 
     
         
