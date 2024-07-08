@@ -1,0 +1,2 @@
+#desafio 04: Crie um programa que tenha uma tupla única com nomes de produtos a seus respectivos preços, na sequência.
+    #No final, mostra uma listagem de preços, organizando os dados em forma tabular.
