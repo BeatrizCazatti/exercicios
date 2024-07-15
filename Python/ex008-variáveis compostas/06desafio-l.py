@@ -1,2 +1,0 @@
-#desafio 06: Cria um programa onde o usuário possa digitar vários valores numéricos e cadastre-os em uma lista. Caso o número já exista lá dentro. Ela não será adicionado. 
-    #No final, serão exibidos todos os valores únicos digitados, em ordem crescente.

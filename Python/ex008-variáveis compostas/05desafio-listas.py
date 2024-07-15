@@ -9,7 +9,6 @@ print(lista)
 
 listaOrdenada = lista[:]
 listaOrdenada.sort()
-
 menor = listaOrdenada[0]
 maior = listaOrdenada[len(lista) - 1]
 
