@@ -1,0 +1,1 @@
+#desafio 13: Crie um programa que leia nome e duas notas de vários alunos a guarde tudo em uma lista composta. No final, mostre um boletim contando a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
