@@ -11,16 +11,22 @@ def lin():
 def contador(a, b, p):
     lin()
     print(f'Contagem de {a} a {b}, de {p} em {p}')
+    sleep(2)
+    
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p = 1
+
     if a < b or p < 0:
         for n in range(a, b+1, p):
+            print(f'{n} ', end='', flush=True)
             sleep(0.3)
-            print(f'{n} ')
-            print(end='')
         print('FIM!')
     else:
         for n in range(a, b-1, -p):
+            print(f'{n} ', end='', flush=True)
             sleep(0.3)
-            print(f'{n} ')
         print('FIM!')
     
 
