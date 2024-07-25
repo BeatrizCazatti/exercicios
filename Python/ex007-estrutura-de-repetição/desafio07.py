@@ -1,8 +1,7 @@
-#desafio 07: Desenvolva um programa que leia o noma, idade a sexo de 4 pessoas. No final do programa, mostra:
-
-#A média da idade do grupo
-#Qual o nome do homem mais velho
-#Quantas mulheres têm menos de 20anos
+#desafio 07: Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre:
+    #A média da idade do grupo
+    #Qual o nome do homem mais velho
+    #Quantas mulheres têm menos de 20anos
 
 soma = 0
 nomeHomemMaisVelho = ''

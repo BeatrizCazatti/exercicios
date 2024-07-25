@@ -1,5 +1,4 @@
-#desafio 02: Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se eles podem ou não formar um triângulo.
-#E classifique o triângulo de acordo a medida dos seus lados.
+#desafio 05: Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se eles podem ou não formar um triângulo.E classifique o triângulo de acordo a medida dos seus lados.
 
 r1 = float(input('reta 1:'))
 r2 = float(input('reta 2:'))
