@@ -3,7 +3,7 @@ def lin(txt):
     print('-'*tam)
     print(f'  {txt.upper():^}  ')
     print('-'*tam)
-def soma(a, b):
+def soma(a, b, c=0): #'c' é um parâmetro opcional, se nenhum valor for atribuido valerá 0
     print(a + b)
 def contador(* num):
     print(f'Recebi {len(num)} números, são eles {num}')
