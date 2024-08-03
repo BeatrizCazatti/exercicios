@@ -1,6 +1,6 @@
 #desafio 05: Crie um programa que tenha uma função fatorial() que raceba dois parâmetros: o primeiro que indique o número a calcular a o outro chamado show. que será um valor lógico (opcional) indicando sa será mostrado ou não na tela o processo de cálculo do fatorial.
 
-def fatorial(num, show=True):
+def fatorial(num, show=False):
     """
     -> Calcula o fatorial de um número
     :param num: O número a ser calculado.
