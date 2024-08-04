@@ -3,12 +3,13 @@
 
 #01.3: Modifique as funções que foram criadas no desafio 01 para que elas aceitem um parâmetro a mais, informando se o valor retornado por elas vai ser ou não formatado pela função moeda().
 
-import moeda
-valor = int(input('Digite um preço: '))
+from moeda import aumentar, diminuir, dobro, metade, moeda, leiaDinheiro
 
-print(f'O aumento de 10% é {moeda.aumentar(valor, 10)}')
-print(f'A redução de 13% é {moeda.diminuir(valor, 13)}')
-print(f'O dobro de {valor} é {moeda.dobro(valor)}')
-print(f'A metade de {valor} é {moeda.metade(valor)}')
+valor = leiaDinheiro('Digite um preço: R$')
+
+print(f'O aumento de 10% é {aumentar(valor, 10)}')
+print(f'A redução de 13% é {diminuir(valor, 13)}')
+print(f'O dobro de {moeda(valor)} é {dobro(valor)}')
+print(f'A metade de {moeda(valor)} é {metade(valor)}')
 
 
