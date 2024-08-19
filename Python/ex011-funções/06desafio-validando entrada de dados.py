@@ -15,7 +15,6 @@ def leiaInt(msg):
             print('\033[0;31mERRO! Digite um número válido.\033[m')
         if ok:
             break
-            
     return valor
 
 n = leiaInt('Digite um número: ')
