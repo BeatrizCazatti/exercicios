@@ -1,24 +1,20 @@
 def leiaInt(msg):
-    valor = 0
-    ok = False
-
     while True:
-        n = str(input(msg))
-        if n.isnumeric():
-            valor = n
-            ok = True
+        try: 
+            n = int(input(msg))
+        except(ValueError, TypeError):
+            print('\033[0;31mERRO! Digite um número inteiro válido.\033[m')
+        except(KeyboardInterrupt):
+            print('\033[0;31mERRO! O usuário não digitou nenhum valor.\033[m')
         else:
-            print('\033[0;31mERRO! Digite um número válido.\033[m')
-        if ok:
-            break
-    return valor
+            return n
 
 def linha(tam):
     print('-'*tam)
 
 def cabeçalho(txt, tam):
     linha(tam)
-    print(f'{txt.center(tam)}')
+    print(f'\033[0;36m{txt.center(tam)}\033[m')
     linha(tam)
 
 def menu(lista):
@@ -26,3 +22,6 @@ def menu(lista):
     for item in lista:
         print(f'\033[32m{c}\033[m - \033[33m{item}\033[m')
         c += 1
+    linha(35)
+    option = leiaInt('\033[0;35m Sua opção: \033[m')
+    return option
