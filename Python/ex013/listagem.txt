@@ -1,2 +1,4 @@
-Ana Paula;30
-Beatriz;19
+Beatriz;18
+Daniel;27
+Elizabeth;101
+Jack Peralta;35

@@ -17,6 +17,9 @@ while True:
         lerArquivo(nomeArquivo)
     elif resposta == 2:
         cabeçalho(f'{lista[1]}', 35)
+        nome = input('Nome: ')
+        idade = input('Idade: ')
+        cadastrar(nomeArquivo, nome, idade)
     elif resposta == 3:
         cabeçalho('Saindo do Sistema... Até logo!', 35)
         break
