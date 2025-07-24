@@ -1,6 +1,6 @@
 import numpy as np
 
-#ndarray = 
+#np.array() – cria um array a partir de listas ou tuplas
 lista = [1,2,3,4,5]
 print('1D Array')
 array_1d = np.array(lista)
